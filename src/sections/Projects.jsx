@@ -2,23 +2,23 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "CineHub - Movie search platform",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
+      "A movie search platform that allows users to discover and explore movies, finding trending movielists, and detailed information about their favorite films.",
+    image: "/projects/cinehub-movie-app.png",
+    tags: ["React", "Typescript", "AppWrite", "Tailwind CSS"],
+    link: "https://asr-cine-hub-2.vercel.app/",
+    github: "https://github.com/Amir-Shawkat/CineHub.git",
   },
-  {
-    title: "E-Commerce Platform",
-    description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
-  },
+  // {
+  //   title: "E-Commerce Platform",
+  //   description:
+  //     "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+  //   image: "/projects/project2.png",
+  //   tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+  //   link: "#",
+  //   github: "#",
+  // },
   {
     title: "Weather Application",
     description:
