@@ -1,15 +1,7 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
-  {
-    title: "CineHub - Movie search platform",
-    description:
-      "A movie search platform that allows users to discover and explore movies, finding trending movielists, and detailed information about their favorite films.",
-    image: "/projects/cinehub-movie-app.png",
-    tags: ["React", "Typescript", "AppWrite", "Tailwind CSS"],
-    link: "https://asr-cine-hub-2.vercel.app/",
-    github: "https://github.com/Amir-Shawkat/CineHub.git",
-  },
+  
   // {
   //   title: "E-Commerce Platform",
   //   description:
@@ -19,6 +11,24 @@ const projects = [
   //   link: "#",
   //   github: "#",
   // },
+  {
+    title: "AI Companion SaaS Platform",
+    description:
+      "An AI-powered companion platform that provides personalized support, problem-solving, and a helping hand for users in various aspects of their lives, from productivity to personal well-being.",
+    image: "/projects/ai-companion.png",
+    tags: ["Next.js", "Clerk", "Supabase", "Vapi.ai", "Sentry", "Shadcn/ui"],
+    link: "https://asr-ai-saas-app.vercel.app/",
+    github: "https://github.com/Amir-Shawkat/ai-saas-app.git",
+  },
+  {
+    title: "CineHub - Movie search platform",
+    description:
+      "A movie search platform that allows users to discover and explore movies, finding trending movielists, and detailed information about their favorite films.",
+    image: "/projects/cinehub-movie-app.png",
+    tags: ["React", "Typescript", "AppWrite", "Tailwind CSS"],
+    link: "https://asr-cine-hub-2.vercel.app/",
+    github: "https://github.com/Amir-Shawkat/CineHub.git",
+  },
   {
     title: "Weather Application",
     description:
