@@ -1,12 +1,13 @@
 import { Button } from "@/components/Button";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  // { href: "#experience", label: "Experience" },
-  // { href: "#testimonials", label: "Testimonials" },
+  { href: "/#about", label: "About" },
+  { href: "/#projects", label: "Projects" },
+  // { href: "/#experience", label: "Experience" },
+  // { href: "/#testimonials", label: "Testimonials" },
 ];
 
 export const Navbar = () => {
@@ -31,7 +32,7 @@ export const Navbar = () => {
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a
-          href="#"
+          href="/#"
           className="text-4xl font-bold tracking-tight hover:text-primary"
         >
           AS<span className="text-primary">R</span>
@@ -41,13 +42,13 @@ export const Navbar = () => {
         <div className="hidden md:flex items-center gap-1">
           <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
             {navLinks.map((link, index) => (
-              <a
-                href={link.href}
+              <Link
+                to={link.href}
                 key={index}
                 className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -71,18 +72,18 @@ export const Navbar = () => {
         <div className="md:hidden glass-strong animate-fade-in">
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link, index) => (
-              <a
-                href={link.href}
+              <Link
+                to={link.href}
                 key={index}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-lg text-muted-foreground hover:text-foreground py-2"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
 
             <Button onClick={() => setIsMobileMenuOpen(false)}>
-              <a href="#contact">Contact Me</a>
+              <Link to="/#contact">Contact Me</Link>
             </Button>
           </div>
         </div>
