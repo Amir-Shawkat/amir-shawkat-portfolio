@@ -2,13 +2,8 @@ import { Button } from "@/components/Button";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { navLinks } from "@/constants";
 
-const navLinks = [
-  { href: "/#about", label: "About" },
-  { href: "/#projects", label: "Projects" },
-  // { href: "/#experience", label: "Experience" },
-  // { href: "/#testimonials", label: "Testimonials" },
-];
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

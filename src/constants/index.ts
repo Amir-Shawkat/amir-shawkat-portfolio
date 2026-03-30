@@ -1,3 +1,6 @@
+import { Github, Linkedin, Twitter, Facebook } from "lucide-react";
+
+
 export const projectsList = [
   
 //   {
@@ -116,3 +119,24 @@ export const projectsList = [
 },
 ];
 
+export const navLinks = [
+  { href: "/#about", label: "About" },
+  { href: "/#projects", label: "Projects" },
+  // { href: "/#experience", label: "Experience" },
+  // { href: "/#testimonials", label: "Testimonials" },
+];
+
+export const socialLinks = [
+  { icon: Github, href: "https://github.com/Amir-Shawkat", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/amir-shawkat", label: "LinkedIn" },
+  { icon: Facebook, href: "https://www.facebook.com/amirshawkat.rafi", label: "Facebook" },
+  { icon: Twitter, href: "https://x.com/amirshawkat05", label: "Twitter" },
+];
+
+export const footerLinks = [
+  { href: "/#about", label: "About" },
+  { href: "/#projects", label: "Projects" },
+  // { href: "/#experience", label: "Experience" },
+  // { href: "/#testimonials", label: "Testimonials" },
+  { href: "/#contact", label: "Contact" },
+];

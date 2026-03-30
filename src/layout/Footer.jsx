@@ -1,19 +1,4 @@
-import { Github, Linkedin, Twitter, Facebook } from "lucide-react";
-
-const socialLinks = [
-  { icon: Github, href: "https://github.com/Amir-Shawkat", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/amir-shawkat", label: "LinkedIn" },
-  { icon: Facebook, href: "https://www.facebook.com/amirshawkat.rafi", label: "Facebook" },
-  { icon: Twitter, href: "https://x.com/amirshawkat05", label: "Twitter" },
-];
-
-const footerLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  // { href: "#experience", label: "Experience" },
-  // { href: "#testimonials", label: "Testimonials" },
-  { href: "#contact", label: "Contact" },
-];
+import { footerLinks, socialLinks } from "@/constants";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
