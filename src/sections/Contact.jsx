@@ -1,7 +1,4 @@
 import {
-  Mail,
-  Phone,
-  MapPin,
   Send,
   CheckCircle,
   AlertCircle,
@@ -9,27 +6,9 @@ import {
 import { Button } from "@/components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { contactInfo } from "@/constants";
 
-const contactInfo = [
-  {
-    icon: Mail,
-    label: "Email",
-    value: "amirshawkat05@gmail.com",
-    href: "mailto:amirshawkat05@gmail.com",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+880 1747-444474",
-    href: "tel:+8801747444474",
-  },
-  {
-    icon: MapPin,
-    label: "Location",
-    value: "Dhaka, Bangladesh",
-    href: "#",
-  },
-];
+
 
 export const Contact = () => {
   const [formData, setFormData] = useState({

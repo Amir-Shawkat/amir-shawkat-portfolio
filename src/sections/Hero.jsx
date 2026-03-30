@@ -2,33 +2,13 @@ import { Button } from "@/components/Button";
 import {
   ArrowRight,
   ChevronDown,
-  Github,
-  Linkedin,
-  Twitter,
-  Facebook,
   Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import { socialLinks, skills } from "../constants";
+import { Link } from "react-router-dom";
 
-const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
-  "SQL",
-  "PostgreSQL",
-  "MongoDB",
-  "HTML5",
-  "Docker",
-  "AWS",
-  "JavaScript",
-  "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Figma",
-  "Git",
-  "GitHub Actions",
-];
+
 
 export const Hero = () => {
   
@@ -94,28 +74,23 @@ export const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <a href="#contact">
+              <Link to="/#contact">
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              </a>
-              <a href="https://drive.google.com/file/d/1Qm0gC-ICN9yQlyjSbsPiMGz_BJ5Fnxr1/view?usp=sharing" target="_blank" download="AmirShawkat_CV.pdf">
+              </Link>
+              <Link to="https://drive.google.com/file/d/1Qm0gC-ICN9yQlyjSbsPiMGz_BJ5Fnxr1/view?usp=sharing" target="_blank" download="AmirShawkat_CV.pdf">
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
-              </a>
+              </Link>
             </div>
 
             {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
-              {[
-                { icon: Github, href: "https://github.com/Amir-Shawkat" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/amir-shawkat" },
-                { icon: Facebook, href: "https://www.facebook.com/amirshawkat.rafi" },
-                { icon: Twitter, href: "https://x.com/amirshawkat05" },
-              ].map((social, idx) => (
+              {socialLinks.map((social, idx) => (
                 <a
                   key={idx}
                   href={social.href}

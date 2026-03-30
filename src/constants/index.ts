@@ -1,4 +1,5 @@
-import { Github, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Github, Linkedin, Twitter, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
 
 
 export const projectsList = [
@@ -139,4 +140,146 @@ export const footerLinks = [
   // { href: "/#experience", label: "Experience" },
   // { href: "/#testimonials", label: "Testimonials" },
   { href: "/#contact", label: "Contact" },
+];
+
+export const skills = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Node.js",
+  "SQL",
+  "PostgreSQL",
+  "MongoDB",
+  "HTML5",
+  "Docker",
+  "AWS",
+  "JavaScript",
+  "Tailwind CSS",
+  "Prisma",
+  "Jest",
+  "Figma",
+  "Git",
+  "GitHub Actions",
+];
+
+
+export const highlights = [
+  {
+    icon: Code2,
+    title: "Clean Code",
+    description:
+      "Writing maintainable, scalable code that stands the test of time.",
+  },
+  {
+    icon: Rocket,
+    title: "Performance",
+    description:
+      "Optimizing for speed and delivering lightning-fast user experiences.",
+  },
+  {
+    icon: Users,
+    title: "Collaboration",
+    description: "Working closely with teams to bring ideas to life.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Innovation",
+    description:
+      "Staying ahead with the latest technologies and best practices.",
+  },
+];
+
+export const contactInfo = [
+  {
+    icon: Mail,
+    label: "Email",
+    value: "amirshawkat05@gmail.com",
+    href: "mailto:amirshawkat05@gmail.com",
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+880 1747-444474",
+    href: "tel:+8801747444474",
+  },
+  {
+    icon: MapPin,
+    label: "Location",
+    value: "Dhaka, Bangladesh",
+    href: "#",
+  },
+];
+
+export const experiences = [
+  {
+    period: "2022 — Present",
+    role: "Senior Frontend Engineer",
+    company: "Tech Innovators Inc.",
+    description:
+      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
+    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+    current: true,
+  },
+  {
+    period: "2020 — 2022",
+    role: "Frontend Engineer",
+    company: "Digital Solutions Co.",
+    description:
+      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
+    technologies: ["React", "Redux", "Jest", "Cypress"],
+    current: false,
+  },
+  {
+    period: "2019 — 2020",
+    role: "Junior Developer",
+    company: "StartUp Labs",
+    description:
+      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
+    technologies: ["React", "Node.js", "MongoDB", "AWS"],
+    current: false,
+  },
+  {
+    period: "2018 — 2019",
+    role: "Freelance Developer",
+    company: "Self-Employed",
+    description:
+      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
+    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+    current: false,
+  },
+];
+
+export const testimonials = [
+  {
+    quote:
+      "Pedro is one of the most talented engineers I've worked with. His attention to detail and ability to translate complex requirements into elegant solutions is remarkable.",
+    author: "Sarah Chen",
+    role: "CTO, Tech Innovators Inc.",
+    avatar:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+  },
+  {
+    quote:
+      "Working with Pedro was a game-changer for our project. He delivered ahead of schedule with code quality that set a new standard for our team.",
+    author: "Michael Rodriguez",
+    role: "Product Manager, Digital Solutions",
+    avatar:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
+  },
+  {
+    quote:
+      "Pedro's expertise in React and TypeScript helped us rebuild our entire frontend in record time. His architectural decisions continue to pay dividends.",
+    author: "Emily Watson",
+    role: "Engineering Lead, StartUp Labs",
+    avatar:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+  },
+  {
+    quote:
+      "Not only is Pedro technically brilliant, but he's also a fantastic communicator and team player. He elevated everyone around him.",
+    author: "David Kim",
+    role: "CEO, Innovation Hub",
+    avatar:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+  },
 ];
